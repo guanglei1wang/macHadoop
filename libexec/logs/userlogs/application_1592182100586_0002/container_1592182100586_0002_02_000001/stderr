@@ -1,0 +1,2 @@
+Error: Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+Caused by: java.lang.ClassNotFoundException: org.apache.hadoop.mapreduce.v2.app.MRAppMaster

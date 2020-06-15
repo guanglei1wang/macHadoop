@@ -1,0 +1,28 @@
+ls -l:
+total 40
+-rw-r--r--  1 jing  admin   105 Jun 15 08:49 container_tokens
+-rwx------  1 jing  admin   803 Jun 15 08:49 default_container_executor.sh
+-rwx------  1 jing  admin   741 Jun 15 08:49 default_container_executor_session.sh
+lrwxr-xr-x  1 jing  admin   125 Jun 15 08:49 job.jar -> /usr/local/Cellar/hadoop/3.2.1_1/tmp/nm-local-dir/usercache/jing/appcache/application_1592182100586_0002/filecache/11/job.jar
+lrwxr-xr-x  1 jing  admin   125 Jun 15 08:49 job.xml -> /usr/local/Cellar/hadoop/3.2.1_1/tmp/nm-local-dir/usercache/jing/appcache/application_1592182100586_0002/filecache/13/job.xml
+drwxr-xr-x  4 jing  admin   128 Jun 15 08:49 jobSubmitDir
+-rwx------  1 jing  admin  5392 Jun 15 08:49 launch_container.sh
+drwx--x---  2 jing  admin    64 Jun 15 08:49 tmp
+find -L . -maxdepth 5 -ls:
+12895618730        0 drwx--x---   14 jing             admin                 448 Jun 15 08:49 .
+12895618735       16 -rwx------    1 jing             admin                5392 Jun 15 08:49 ./launch_container.sh
+12895618737        8 -rwx------    1 jing             admin                 741 Jun 15 08:49 ./default_container_executor_session.sh
+12895618734        8 -rw-r--r--    1 jing             admin                  12 Jun 15 08:49 ./.container_tokens.crc
+12895618733        8 -rw-r--r--    1 jing             admin                 105 Jun 15 08:49 ./container_tokens
+12895618744        0 drwxr-xr-x    4 jing             admin                 128 Jun 15 08:49 ./jobSubmitDir
+12895618719        8 -r-x------    1 jing             admin                3716 Jun 15 08:49 ./jobSubmitDir/job.split
+12895618713        8 -r-x------    1 jing             admin                 484 Jun 15 08:49 ./jobSubmitDir/job.splitmetainfo
+12895618736        8 -rw-r--r--    1 jing             admin                  52 Jun 15 08:49 ./.launch_container.sh.crc
+12895618739        8 -rwx------    1 jing             admin                 803 Jun 15 08:49 ./default_container_executor.sh
+12895618738        8 -rw-r--r--    1 jing             admin                  16 Jun 15 08:49 ./.default_container_executor_session.sh.crc
+12895618722      384 -r-x------    1 jing             admin              193492 Jun 15 08:49 ./job.xml
+12895618732        0 drwx--x---    2 jing             admin                  64 Jun 15 08:49 ./tmp
+12895618740        8 -rw-r--r--    1 jing             admin                  16 Jun 15 08:49 ./.default_container_executor.sh.crc
+12895618716        0 drwx------    3 jing             admin                  96 Jun 15 08:49 ./job.jar
+12895618717      624 -r-x------    1 jing             admin              316534 Jun 15 08:49 ./job.jar/job.jar
+broken symlinks(find -L . -maxdepth 5 -type l -ls):
